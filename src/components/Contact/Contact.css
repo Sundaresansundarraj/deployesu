@@ -1,0 +1,175 @@
+.contactu{
+    width: 100%;
+    height: 100vh;
+    border-bottom: 5px solid gray;
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.conu{
+    font-weight: 600;
+    font-size: 43px;
+    margin-bottom: 0;
+}
+.conu span{
+    color: red;
+}
+
+.contacts{
+    display: flex;
+    margin-top: 2em;
+    
+}
+.contacts h3{
+    font-weight: 400;
+   
+}
+
+.contu{
+    margin-top: 2em;
+}
+.contu .card{
+    margin: 1em 14em;
+    box-shadow: 3px 3px 3px 3px gray;
+    border: 2px solid black;
+    transition: .5s;
+   
+}
+ .contu .card:hover{
+    box-shadow: none;
+    /* background-color: lightyellow; */
+  
+}
+.card .card-body{
+    padding: 14px 0;
+}
+.card .card-body .card-title{
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+.card .card-body .card-text{
+    margin-bottom: 5px;
+}
+.contu .card .ii{
+    font-size: 30px;
+}
+.ii.mai{
+    color: rgb(255,67,67);
+}
+.ii.mes{
+    color:  #0099FF;
+}
+.ii.wha{
+    color: #075E54;
+}
+.card-body a{
+    text-decoration: none;
+    
+}
+.card-body a:hover{
+    color: red;
+    
+}
+.card-body .o{
+    margin-left: 0.3em;
+    transition: 0.5s;
+    
+}
+.card-body .o:hover{
+    transform: translateX(10px);
+}
+.contn .h{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+.h .form-label{
+    position: absolute;
+    left: 75px;
+    top: 25px;
+    font-weight: 600;
+    transition: all .3s;
+}
+.h .form-control:focus + .form-label{
+    top:-14px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: white;
+    color: blue;
+}
+.h .form-control{
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 600px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px 3px gray;
+    transition: all .3s;
+}
+.h .form-control::placeholder{
+    opacity: 0;
+}
+.h .form-control:focus{
+    box-shadow: none;
+    border-color: blue;
+    
+}
+.h .form-control:focus::placeholder{
+    opacity: 1;
+}
+
+.h .form-control:hover{
+        box-shadow: none;   
+}
+.cont-2 .btn{
+    background-color: black;
+    margin-top: 1.5em;
+    width: 170px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 0;  
+    font-size: 18px;
+    border: 2px solid white;
+    box-shadow: 3px 3px 3px 3px gray;
+    transition: .5s;
+}
+.cont-2 .btn:hover{
+    box-shadow: none;
+    background-color: red;
+    color: black;
+    border: 2px solid black
+}
+.btn .po{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 740px){
+    .contactu{
+        width: 100vw;
+        height: max-content;
+        border-bottom: 5px solid gray;
+        padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        row-gap: 2em;
+    }
+    .contu .card{
+        margin: 1em 2em;
+        box-shadow: 3px 3px 3px 3px gray;
+        border: 2px solid black;
+        transition: .5s;
+       
+    }
+}

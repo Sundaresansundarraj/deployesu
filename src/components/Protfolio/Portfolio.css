@@ -1,0 +1,101 @@
+.mallika{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-bottom: 5px solid gray;
+    
+    
+   
+
+}
+ .port{
+    align-items: center;
+    padding-top: 6em;
+    
+   
+    
+}
+
+.port h1{
+    font-size: 60px;
+    text-align: center;
+}
+.port h1 span{
+    color: red;
+}
+.susu{
+    margin-top: 2em;
+    
+    display: flex;
+    column-gap: 1em;
+ 
+}
+ .susu .card{
+   
+    
+    margin-bottom: 30px;
+    padding: 1em;
+    box-shadow: 0 0 0 3px gray;
+    border: 2px solid black;
+   
+    
+}
+.susu .card:hover{
+    box-shadow: none;    
+
+}
+.kju{
+    overflow: hidden;
+}
+.susu .card .imgu:hover {
+    
+    transform: scale(1.2);   
+}
+
+
+.one,.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 1;
+    right: 3;
+    left: 0;
+    bottom: 0;
+    z-index: 99999;
+   
+}
+.overlay{
+   background-color: aliceblue;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.model-content{
+    position: fixed;
+    
+   background-color: white;
+    border: 2px solid black;
+}
+.juli{
+   position: absolute;
+   right: .5em;
+   top: .5em;
+   font-size: 24px;
+    
+} 
+@media screen and (max-width: 740px){
+    .mallika{
+        height: max-content;
+        width: 100vw;
+    }
+    .port .susu {
+        
+        display: flex;
+        flex-direction: column;
+       
+        
+    }
+}
+
+
+

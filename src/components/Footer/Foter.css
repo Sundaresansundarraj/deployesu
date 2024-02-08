@@ -1,0 +1,90 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    border-bottom: 5px solid gray;
+}
+.footer p{
+    font-weight: 600;
+}
+.footer h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: red;
+}
+.foter1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1em;
+   
+}
+.emojusa{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+}
+.emojusa svg{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.emojua{
+    display: inline-flex;
+    
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+   padding: 7px;
+   box-shadow:  3px 3px 3px 3px   gray;
+   
+    
+    border-radius: 50%;
+    margin-right: 0.6em; 
+    transition: .5s ease; 
+    opacity: 0;
+    animation: slideLefts 1s ease forwards;
+    animation-delay: calc(.2s*var(--1));
+    margin: 30px 15px 30px 0; 
+}
+.emojua.fas{
+    border: 2px solid  #316FF6;
+    color: #316FF6;
+}
+.emojua.in{
+    color: rgb(245, 96, 64);
+    border: 2px solid rgb(245, 96, 64)  ;
+}
+.emojua.wh{
+    color: 	#075E54;
+    border: 2px solid 	#075E54;
+}
+.emojua.tw{
+    color: 	 #1DA1F2;
+    border: 2px solid 	 #1DA1F2;
+}
+
+.emojua:hover{
+   
+    box-shadow: none;
+}
+@keyframes slideLefts{
+    0%{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 740px){
+    
+    .footer{
+        width: 100vw;
+    }
+}

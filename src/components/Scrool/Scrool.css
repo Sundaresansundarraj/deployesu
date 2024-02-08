@@ -1,0 +1,26 @@
+.scroolbars{
+    position: fixed;
+    right: 1em;
+    bottom: -20%;
+    
+}
+.scroolbars{
+    font-size: 28px;
+    border: 2px solid black;
+    border-radius: 15px;
+   
+    background-color: gray;
+    color: white;
+    transition: .3s;
+    opacity: .8;
+}
+.scroolbars:hover{
+    background-color: red;
+    color: black;
+}
+.scrool-show{
+    bottom: 1em;
+}
+@media screen and (max-width: 740px){
+    
+}

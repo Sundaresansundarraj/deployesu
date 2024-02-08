@@ -1,0 +1,268 @@
+.skill{
+    width: 100%;
+    height: 100vh;
+    padding-top: 5em;
+    border-bottom: 5px solid gray;
+    position: relative;
+    
+}
+.skill h1{
+    font-size: 60px;
+ text-align: center;
+}
+.skill h1 span{
+    color: red;
+}
+.skillcon{
+    display: flex;
+    
+}
+.skillcon .imh{
+    font-size: 30px;
+    
+}
+.skillcon .card{
+    border: none;
+    
+}
+.skillcon .innercon{
+    padding: 0 10em;
+}
+.skillcon h3{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+}
+.skillcon p{
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText .5s 1s linear forwards;
+    opacity: 0;
+    margin-bottom: 0;
+}
+
+.kk{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border: 2px solid black;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.kk span{
+    height: 100%;
+    
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.kk.html span{
+    width: 90%;
+}
+.kk.css span{
+    width: 80%;
+}
+.kk.js span{
+    width: 70%;
+}
+.kk.sql span{
+    width: 83%;
+}
+.kk.react span{
+    width: 75%;
+}
+.kk span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText .5s 1.5s linear forwards;
+    opacity: 0;
+   
+}
+.kk.html span::after{
+    content: "95%";
+}
+.kk.css span::after{
+    content: "80%";
+}
+.kk.js span::after{
+    content: "70%";
+}
+.kk.sql span::after{
+    content: "83%";
+}
+.kk.react span::after{
+    content: "75%";
+}
+.kk span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -5px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText{
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1)
+    }
+}
+.radial-bars{
+   margin-top: 3em;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+.radial-bars .radial-bar svg{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+    
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+   
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animation-bar 1s linear forwards;
+    
+    
+}
+@keyframes  animation-bar{
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke:black;
+    fill: transparent;
+    stroke-dashoffset: 502;
+    stroke-dasharray: 502;
+    stroke-linecap: round;
+    
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+ @keyframes animate-path1{
+    100%{
+        stroke-dashoffset: 60;;
+    }
+ }
+ @keyframes animate-path2{
+    100%{
+        stroke-dashoffset: 175;;
+    }
+ }
+ @keyframes animate-path3{
+    100%{
+        stroke-dashoffset: 125;
+    }
+ }
+ @keyframes animate-path4{
+    100%{
+        stroke-dashoffset: 75;
+    }
+ }
+ .radial-bar .percentage{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+ }
+ .radial-bar .text{
+   
+    position: absolute;
+    text-align: center;
+    left: 70%;
+    bottom: -5px;
+    transform: translate(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+ }
+
+ @media screen and (max-width: 740px){
+    .skill{
+        width: 100vw;
+        height: max-content;
+        padding-top: 5em;
+        border-bottom: 5px solid gray;
+        position: relative;
+        padding-bottom: 2em;
+        
+    }
+    .skillcon{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+        margin-top: 2em;
+    }
+    .skillcon .innercon{
+        padding: 0 1em;
+    }
+    .radial-bar .text{
+   
+        position: absolute;
+        text-align: center;
+        left: 70%;
+        bottom: -4px;
+        transform: translate(-50px);
+        font-size: 17px;
+        font-weight: 500;
+        animation: showText 0.5s 1s linear forwards;
+        opacity: 0;
+     }
+ }
+
+
+
+
+
+
+
+
